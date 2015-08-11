@@ -49,7 +49,7 @@ be converted to a simple-schema on the fly.
 
 Any schema may be wrapped in `sequence-of` to indicate the value should
 be sequential, or wrapped in `set-of` to indicate the value is a set.  These
-are aliases for `seq-schema` and `set-schema`
+are aliases for `seq-schema` and `set-schema`.
 
 A path may be marked as an `optional-path`. This means that is doesn't
 have to be present, but if it is, it must match the given schema.
