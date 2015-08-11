@@ -53,7 +53,7 @@ are aliases for `seq-schema` and `set-schema`
 A path may be marked as an `optional-path`. This means that is doesn't
 have to be present, but if it is, it must match the given schema.
 
-Wildcard paths are paths where one or more peices are defined as anything
+Wildcard paths are paths where one or more pieces are defined as anything
 matching a given schema.
 
 Example Map Schema:
