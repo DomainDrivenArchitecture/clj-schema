@@ -31,11 +31,12 @@ simple-schemas.
 If you don't create a simple-schema explicitly then in most cases 
 clj-schema will implicitly create one for you:
 
-`(validation-errors String "A")` is equivalent to `(validation-errors (simple-schema String) "A")`
-`(validation-errors number? 99)` is equivalent to `(validation-errors (simple-schema number?) 99)`
-`(validation-errors [number? pos?] 77)` is equivalent to `(validation-errors (simple-schema [number? pos?]) 77)`
-`(validation-errors [:or String Keyword] :a)` is... 
-  equivalent to `(validation-errors (simple-schema [:or String Keyword]) :a)`
+| Simple | Equivalent |
+|--------|------------|
+|`(validation-errors String "A")`| `(validation-errors (simple-schema String) "A")`|
+|`(validation-errors number? 99)`| `(validation-errors (simple-schema number?) 99)`|
+|`(validation-errors [number? pos?] 77)`| `(validation-errors (simple-schema [number? pos?]) 77)`|
+|`(validation-errors [:or String Keyword] :a)`| `(validation-errors (simple-schema [:or String Keyword]) :a)`|
 
 
 Map Schemas
