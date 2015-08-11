@@ -31,7 +31,7 @@ simple-schemas.
 If you don't create a simple-schema explicitly then in most cases 
 clj-schema will implicitly create one for you:
 
-| Simple | Equivalent |
+| Implicit | Equivalent |
 |--------|------------|
 |`(validation-errors String "A")`| `(validation-errors (simple-schema String) "A")`|
 |`(validation-errors number? 99)`| `(validation-errors (simple-schema number?) 99)`|
