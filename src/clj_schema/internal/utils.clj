@@ -1,4 +1,5 @@
 (ns clj-schema.internal.utils
+  (:refer-clojure :exclude [uuid?])
   (:require [clojure.set :as set]
             [clojure.string :as str]))
 
@@ -141,8 +142,8 @@
    were not listed in the key destructuring."
   [name arg-vec & body]
   (let [valid-key-set (if (map? (last arg-vec))
-    (set (map keyword (:keys (last arg-vec))))
-      #{})
+                       (set (map keyword (:keys (last arg-vec))))
+                       #{})
         num-args (count arg-vec)
         [kw-destructuring kw-arg-map] (single-destructuring-arg->form+name (last arg-vec))
         new-arg-vec (vec (concat (drop-last 2 arg-vec) ['& kw-destructuring]))]

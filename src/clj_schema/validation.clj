@@ -28,7 +28,7 @@
   (pre-validation-transform-error [this state val-at-path pre-validation-transform-fn]
     "Caused by the value not being able to be transformed into a validatable form"))
 
-(defn- intelli-print [schema f]
+(defn intelli-print [schema f]
   (or (:source schema)
       (u/pretty-fn-str f)))
 

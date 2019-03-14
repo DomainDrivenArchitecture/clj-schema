@@ -9,3 +9,5 @@
 .idea/
 clj-schema.iml
 doc/**
+target/**
+.nrepl-port

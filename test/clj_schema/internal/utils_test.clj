@@ -1,4 +1,5 @@
 (ns clj-schema.internal.utils-test
+  (:refer-clojure :exclude [uuid?])
   (:use clojure.test
         clj-schema.internal.utils))
 
