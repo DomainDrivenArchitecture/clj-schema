@@ -21,4 +21,6 @@
             "slamhound" ["run" "-m" "slam.hound"]}
   :codox {:src-dir-uri "https://github.com/runa-dev/clj-schema/blob/master"
           :src-linenum-anchor-prefix "L"
-          :exclude [clj-schema.internal.utils]})
+          :exclude [clj-schema.internal.utils]}
+  :deploy-repositories [["snapshots" :clojars]
+                        ["releases" :clojars]])
